@@ -43,13 +43,18 @@ export default function Cats() {
                 <Card key={idx} className="h-[350px] w-[350px] flex justify-center items-center">
                     <CardContent>
                     <Sheet>
+                    <SheetTitle>
+                    <p>ID: {item.id}</p>
+                    </SheetTitle>
                     <SheetTrigger>
                     <Image src={item.url} width={500} height={250} alt="obraz" className="h-[200px] w-[200px]"/>
-                    <h1>Click at photo</h1>
+                    <h1>Click on the photo</h1>
                     </SheetTrigger>
-                    <SheetContent side="bottom" className="flex items-center flex-col justify-center h-[90%]">
-                            <h1>LOOK AT ME!!!!!</h1>
+                    <SheetContent side="bottom" className="flex items-center flex-col justify-center h-[90%] bg-gradient-to-b from-slate-900 to-black">
+                        <h1>╰(*°▽°*)╯HELLO╰(*°▽°*)╯</h1>
                         <Image src={item.url} width={500} height={250} alt="obraz"/>
+                        <h1>WIDTH: {item.width}</h1>
+                        <h1>HEIGHT: {item.height}</h1>
                     </SheetContent>
                     </Sheet>
                     </CardContent>
